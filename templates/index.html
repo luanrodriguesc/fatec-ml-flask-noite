@@ -6,44 +6,35 @@
         <p style="background-image: url('https://img.myloview.com.br/adesivos/seguro-de-automovel-carro-de-prata-pequeno-coberto-pelas-maos-700-142443233.jpg')" alt="Draft22"/>
     </head>
     <body>
-    <div class="card mx-4 mx-md-5 shadow-4-strong">
+     <div class="card mx-4 mx-md-5 shadow-4-strong">
             <div class= "py-4 px-md-4">
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-6">
-                        <h2 class="fw-bold mb-5 text-center">Dados consumidor</h2>
+                        <h2 class="fw-bold mb-5 text-center">Análise de Seguro</h2>
                         <form action="predicao" method="POST">
                             <div class="campo">
                                 <div class="col-md-6 mb-4">
                                     <div class="form-outline">
-                                        <label><strong>Age?</strong></label>
-                                        <select  name="gp">
-                                            <option value="0"> 26-39</option>
+                                        <label><strong>IDADE</strong></label>
+                                        <select  name="AGE">
+                                            <option value="0"> 16-25</option>
+                                            <option value="1"> 26-39</option>
                                             <option value="1"> 40-64</option>
-                                            <option value="1"> 16-25</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <label><strong>Gender?</strong></label>
-                                    <select  name="pts">
+                                    <label><strong>GENÊRO</strong></label>
+                                    <select  name="GENDER">
                                         <option value="0"> Masculino</option>
                                         <option value="1"> Feminino</option>
                                     </select>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <div class="form-outline">
-                                        <label ><strong>Race?</strong></label>
-                                        <select name="fg">
-                                            <option value="0"> maioria</option>
-                                            <option value="1"> minoria</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4">
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
-                                            <label><strong>DRIVING_EXPERIENCE?</strong></label>
-                                            <select name="ft">
+                                            <label><strong>EXPERIÊNCIA DE CONDUÇÃO</strong></label>
+                                            <select name="DRIVING_EXPERIENCE">
                                                 <option value="0"> 0-9</option>
                                                 <option value="1">10-19</option>
                                                 <option value="2">20-29</option>
@@ -55,45 +46,18 @@
                                 <div class="col-md-6 mb-4">
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
-                                            <label><strong>Education?</strong></label>
-                                            <select name="reb">
-                                                <option value="0">high school</option>
-                                                <option value="1">university</option>
-                                                <option value="2">none</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <label><strong>Income?</strong></label>
-                                            <select name="ast">
+                                            <label><strong>RENDA</strong></label>
+                                            <select name="INCOME"
                                                 <option value="0">upper class</option>
                                                 <option value="1">middle class</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-4">
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
-                                            <label class="form-label">Credit score</label>
-                                            <input type="number" step="0.1" min="0" name="stl" class="form-control" />
-                                        </div>
-                                    </div>
-                                <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <div class="form-outline">
-                                        <label class="form-label">VEHICLE OWNERSHIP</label>
-                                        <input type="number" step="0.1" min="0" name="blk" class="form-control" />
-                                    </div>
-                                </div>
-
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <label><strong>VEHICLE YEAR?</strong></label>
-                                            <select name="tov">
+                                            <label><strong>ANO DO VEÍCULO?</strong></label>
+                                            <select name="VEHICLE_YEAR">
                                                 <option value="0">antes de 2015</option>
                                                 <option value="1">depois de 2015</option>
                                             </select>
